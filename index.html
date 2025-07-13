@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta do Cozinheiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🍳 Roleta do Cozinheiro 🍳</h1>
+        
+        <!-- Área da receita sugerida -->
+        <div class="recipe-section">
+            <h2 class="recipe-title">Receita Sugerida</h2>
+            <div class="recipe-card" id="recipeCard">
+                <p class="recipe-text">Clique em "GIRAR" para descobrir o cozinheiro e a receita!</p>
+            </div>
+        </div>
+
+        <!-- Roleta Quadrada -->
+        <div class="square-container">
+            <div class="square" id="square">
+                <div class="side top">Tati</div>
+                <div class="side right">Nica</div>
+                <div class="side bottom">Carol</div>
+                <div class="side left">JC</div>
+            </div>
+            <div class="pointer-square"></div>
+        </div>
+
+        <!-- Botão girar -->
+        <button class="spin-btn" id="spinBtn">GIRAR</button>
+
+        <!-- Resultado -->
+        <div class="result" id="result">
+            <h3 class="winner-text" id="winnerText"></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
